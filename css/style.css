@@ -1,3 +1,122 @@
 /* GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #ffffff;
+    font-family: 'Quicksand', sans-serif !important;
+    width: 100%;
+    height: 100%;
+}
+h1,h2,h3,h4{
+    font-family: inherit;
+    font-size: 40px;
+    line-height: 50px;
+}
+a{
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+a:hover{
+    color: #000000 !important;
+    text-decoration: none !important;
+}
+
+
+/* Nav */
+#nav{
+    width: 382px;
+    background: #FF7A00;
+    color: #ffffff;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+}
+#nav h1{
+    margin: 95px 46px 130px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    width: 260px;
+}
+#nav .header-link:hover{
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+#nav #nav-link-description{
+    margin-bottom: 140px;
+}
+#nav-link-description a{
+    font-size: 12px;
+    line-height: 32px;
+    padding: 2px;
+    width: 1509px;
+    height: 34px;
+    text-decoration: none;
+} 
+#nav-link-description a:hover,
+#nav #nav-link-footer a:hover{
+    color: #000000 !important;
+    text-decoration: none !important;
+}
+#nav .nav-link-active{
+    color: #000000 !important;
+    
+}
+#nav .nav-link-active:hover{
+    color: #ffffff !important;
+    
+}
+#nav #nav-link-footer{
+    text-align: center;
+}
+#nav #nav-link-footer p{
+    padding: 10px;
+    height: 33px;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 12px;
+}
+#nav #nav-link-footer i{
+    margin-right: 15px;
+    opacity: 0.7;
+}
+.zuri-images{
+    
+}
+@keyframes zuriImages{
+    0%{right: -1109px; display: none;}
+    100%{right: 0; display: block;}
+}
+#zuri-images1{
+    background: url(/Images/girlsmile.png) center center/cover no-repeat;
+}
+#zuri-images2{
+    background: url(/Images/girlfine.png)  center center/cover no-repeat;
+}
+#zuri-images3{
+    background: url(/Images/girlOnGlasses.png) center center/cover no-repeat;
+}
+@media screen and (max-width:1024px){
+    #nav h1{
+        margin: 95px 36px 130px;
+        font-size: 40px;
+        width: 160px;
+    }
+    #nav #nav-link-footer p{
+        padding: 5px;
+        font-size: 13px;
+        line-height: 15px;
+        margin-bottom: 12px;
+    }
+}
+@media screen and (max-width:768px){
+    #nav h1{
+        margin: 95px 15px 130px;
+        width: 120px;
+    }
+}
+
 
 /* REUSEABLES  */
