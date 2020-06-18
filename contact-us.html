@@ -17,6 +17,9 @@
     <link rel="shortcut icon" href="" type="image/x-icon" />
     <link rel="apple-touch-icon-precomposed" href="" />
 
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Google fonts -->
 
 
@@ -25,27 +28,185 @@
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <!-- ADD YOUR CSS LINK -->
-
+    <link rel="stylesheet" href="./css/contact-us.css" />
 </head>
 
-<body>
+<body class="contact__us--body">
 
-    <!-- HEADER STARTS HERE -->
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <!-- Left Sidebar -->
+          <div class="col-sm-3" id="contact-leftbar">
+               
+               <div class="pl-5" id="sidebars">
 
-    <!-- NAVBAR STARTS HERE -->
+            <!-- Left Sidebar Header-->
+                <div class="contact__leftbar--head text-light">
+                    <h1 class="contact__leftbar--header">ZURI STUDIO</h1>
+                </div>
 
-    <!-- NAVBAR ENDS HERE -->
+            <!-- Left Sidebar Navbar-->
+                <ul class="contact__leftbar--list list-unstyled flex-column">
+                    <li class="nav-item mt-4 mb-4">
+                      <a class="nav-link text-light" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mt-4 mb-4">
+                      <a class="nav-link text-light" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item mt-4 mb-4">
+                      <a class="nav-link text-light" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item mt-4 mb-4">
+                        <a class="nav-link text-light" href="#">Pricing</a>
+                      </li>
+                      <li class="nav-item mt-4 mb-4">
+                        <a class="nav-link text-light" href="#">Our Services</a>
+                      </li>
+                      <li class="nav-item mt-4 mb-4">
+                      <a class="nav-link text-dark" href="#">Contact</a>
+                      </li>
+                  </ul>
+           <!-- Left Sidebar Paragraph -->
+                  <div class="text-light contact__leftbar--paragraph">
+                    <p class="">Copyright © Zuri Studios 2020</p>
+                  </div>
 
-    <!-- HEADER ENDS HERE -->
+           <!-- Left Sidebar Social Icons -->
+                  <div class="text-light contact__leftbar--icon">
+                      <span class="contact__leftbar--span">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                      </span>
+                      <span class="contact__leftbar--span">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </span>
+                    <span class="contact__leftbar--span">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </span>
+                    <span class="">
+                          Share
+                    </span>
+                  </div>
+                 </div>
+          </div>
 
-    <!-- HERO SECTION STARTS HERE -->
+          <!-- Right Sidebar -->
+          <!-- Right sidebar header -->
+         <div class="col-sm-8 bg-light text-dark bg-white" id="contact-rightbar">
+            <div class="contact__rightbar-head text-center mt-5">
+                <h1 class="contact__rightbar-header" >Contact Us</h1>
+         <!-- header underline -->
+                <span class="contact-line"> </span>
+            </div>
 
+         <!-- Company Location on map -->
+            <div class="contact__map-box w-100 mt-5">
+                <img src="./Images/map.png" class="img-fluid" alt="Responsive image">
+            </div>
+         <!-- Cact Us for header -->
+            <div class="text-dark mt-5 mb-4">
+                    <h5 class="font-weight-bold">Conatct Us To Get Free Support.</h5>
+                </div>
+         <!-- form -->
+                <form>
+                    <div class="form-group row pt-1rem pb-1rem">
 
-    <!-- FOOTER STARTS HERE -->
+         <!-- input message-->
+              
+                <div class="input-group col-sm-8">
+                    <!-- <input type="text" class="form-control h-100 contact__rightbar-input" placeholder="Your Message Here" id="message"> -->
+                    <textarea name="text" class="form-control contact__textarea contact__rightbar-input" placeholder="Your Message Here" id="message" cols="30" rows="5"></textarea>
+                </div>
+             
+              
+         <!-- input name and email -->
+                <div class="col-sm-4">
 
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control contact__rightbar-input" placeholder="Name">
+                </div>
 
-    <!-- FOOTER ENDS HERE -->
+                <div class=" input-group mb-3">
+                    <input type="email" class="form-control contact__rightbar-input" placeholder="Email">
+                </div>
+            <!-- form button -->
+                <button type="submit" class="btn contact__rightbar-btn w-100">Send
+                    <span class="icon"><img src="./Images/Vector 2.png" alt="icon" class="img-fluid">
+                    </span></button>
+                </div>
+                  </div>
+                  </form>
 
+            <!-- right bar footer -->
+                  <div class="contact-details row mb-5 mt-5">
+                    <div class="col-sm-4">
+
+             <!-- icon round box -->
+                      <div class="contact__icon-box d-flex align-items-center justify-content-center">
+                          <!-- icon-->
+                        <span class="icon text-light">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </span>  
+                      </div>  
+                      
+                      <div class="header mt-4 mb-3">
+                        <h5 class="font-weight-bold text-dark">Email</h5>
+                      </div>
+                    <!-- Email Address -->
+                      <div class="contact__rightbar-paragraph text-dark">
+                        <p class="m-0">zuristudios@gmail.com</p>
+                        <p class="m-0">supportzuristudios.mail</p>
+                    </div>
+                    </div>
+                    <div class="col-sm-4">
+               <!-- icon round box -->
+                      <div class="contact__icon-box d-flex align-items-center justify-content-center">
+                          <!-- icon-->
+                        <span class="icon text-light">
+                            <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                        </span>  
+                      </div> 
+                      <div class="header mt-4 mb-3">
+                        <h5 class="font-weight-bold text-dark ">Phone Number</h5>
+                    </div> 
+                    <!-- Phone number--> 
+                    <div class="contact__rightbar-paragraph text-dark">
+                        <p class="m-0">+234 816 0877 462</p>
+                        <p class="m-0">+234 819 8772 263</p>
+                    </div>
+                    </div>
+                    <div class="col-sm-4">
+                <!-- icon round box -->
+                      <div class="contact__icon-box d-flex align-items-center justify-content-center">
+                          <!-- icon-->
+                        <span class="icon text-light ">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </span>  
+                      </div> 
+                      <div class="header mt-4 mb-3">
+                        <h5 class="font-weight-bold text-dark ">Location</h5>
+                    </div>
+                    <!-- Address--> 
+                    <div class="contact__rightbar-paragraph text-dark">
+                        <p class="m-0">No 10, Lekki Phase 1</p>
+                        <p class="m-0">Lagos State, Nigeria</p>
+                    </div>
+                    </div>
+                  </div>
+          </div>
+          <!-- page control arrows -->
+          <div class="col-sm-1 p-0 bg-white">
+            <div class=" d-flex text-dark flex-column justify-content-between h-100">
+          <span class="contact__arrow--span pr-2">
+              <i class="fa fa-chevron-up" aria-hidden="true"></i>
+          </span>
+          <span class="contact__arrow--span pr-2">
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </span>
+      </div>
+        </div>
+
+        </div>
+      </div>
 
     <!-- All javascript at the bottom of the page for fast page load -->
     <script src="./js/jquery-3.5.1.min.js"></script>

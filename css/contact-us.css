@@ -1,0 +1,98 @@
+html{
+    font-size: 62.5%;
+}
+/* bg-color */
+.contact__us--body{
+    background-color: gray;
+}
+
+/* contact us page styles for leftbar */
+#contact-leftbar{
+    background: #FF7A00;
+    z-index: 2;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+}
+.contact__leftbar--head{
+    margin: 7.5rem 0 0 0;
+}
+.contact__leftbar--header{
+    font-size: 3rem !important;
+    font-weight: 700 !important;
+}
+.contact-line{
+    background-color: #FF7A00;
+    width: 5rem;
+    height: .2rem;
+    display: block;
+    margin: auto;
+}
+.contact__leftbar--list{
+    font-size: 1.8rem;
+    font-weight: 200;
+    margin: 9.5rem  0;
+}
+.contact__leftbar--icon{
+    font-size: 2rem;
+    
+}
+.contact__leftbar--span{
+    margin-right: 1.2rem;
+}
+.contact__leftbar--paragraph{
+    font-size: 1.2rem;
+}
+
+/* contact us page styles for righttbar */
+#contact-rightbar{
+    padding: 0 60px;
+}
+.contact__rightbar-header{
+    font-size: 3.5rem !important;
+    font-weight: 900 !important;
+}
+
+/* input styling */
+.contact__rightbar-input{
+    background: #FEF7F1 !important;
+    border: 0.5px solid rgba(243, 104, 74, 0.08) !important;
+    border-radius: 2px !important;
+    padding: 2rem !important;
+}
+.contact__textarea{
+    resize: none;
+}
+/* btn styling */
+.contact__rightbar-btn{
+    background-color: #FF7A00 !important;
+    color: #fff !important;
+    font-size: 1.5rem !important;
+    border-radius: none !important;  
+}
+
+/* placeholder styling */
+.contact__rightbar-input::placeholder{
+    font-size: 1.25rem !important;
+    color: #B8B3B3 !important;
+}
+
+/* icon styling */
+.contact__icon-box{
+    background: #FF7A00;
+    font-size: 3rem;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+}
+h5{
+    font-size: 2rem;
+}
+.contact__rightbar-paragraph{
+    font-size: 1.4rem;
+}
+
+/* left side arrow styling */
+.contact__arrow--span{
+    font-size: 2rem;
+    text-align: right;
+    display: block;
+}
