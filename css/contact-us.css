@@ -6,6 +6,10 @@ html{
     background-color: gray;
 }
 
+i {
+    font-family:'FontAwesome'!important;
+    }
+    
 /* contact us page styles for leftbar */
 #contact-leftbar{
     background: #FF7A00;
