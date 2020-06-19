@@ -44,7 +44,7 @@ h1,h2,h3,h4,h5,h6,p{
     top:0;left:0;
     height: 100vh;
     background: #FF7A00;
-    width: 20%;
+    width: 25%;
     overflow-y: auto;
     align-items: center;
     justify-content: center;
@@ -60,11 +60,13 @@ h1,h2,h3,h4,h5,h6,p{
     font-family: 'qsbold';
 }
 
-.header_nav,.body_nav,.footer_nav{width: 100%;}
+.header_nav,.body_nav,.footer_nav,.footer_nav div{width: 100%;}
 
 .header_nav h3{
     font-family: 'qsbold';
 }
+
+
 
 .footer_nav p{
     font-size: .75em;
@@ -155,7 +157,7 @@ footer{
     .img_container{
         width: 230px;
         height: 165px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }    
 
     footer{
@@ -169,7 +171,7 @@ footer{
     }
 
     .img_container{
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 }
 
