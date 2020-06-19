@@ -9,9 +9,7 @@
 body{
     font-family: 'Quicksand', sans-serif !important;
 }
-.side{
-    background-color: #FF7A00 !important
-}
+
 button{
     background-color: #FF7A00 !important
 }
@@ -21,6 +19,8 @@ button:hover{
 hr{
     background-color:#FF7A00;
     width:25%;
+    position: relative;
+    left:37%;
 }
 .para{
     padding: 0 2vw !important
