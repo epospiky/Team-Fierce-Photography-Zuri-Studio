@@ -4,7 +4,12 @@
     border:0.2px solid black;
     border-radius: 8px;
     margin-top:50px;
-    margin-left:5vw
+    margin-left:5vw;
+    transition: all 0.5s ease
+}
+.items:hover{
+    transform: scale(1.06);
+    transition: all 0.5s ease;
 }
 body{
     font-family: 'Quicksand', sans-serif !important;
@@ -14,7 +19,8 @@ button{
     background-color: #FF7A00 !important
 }
 button:hover{
-    background-color: rgb(139, 70, 6) !important
+    background-color: rgb(139, 70, 6);
+    outline: none !important
 }
 hr{
     background-color:#FF7A00;
