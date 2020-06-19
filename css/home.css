@@ -10,6 +10,7 @@ body{
     font-family: 'Quicksand', sans-serif !important;
     width: 100%;
     height: 100%;
+    overflow-x: scroll;
 }
 h1,h2,h3,h4{
     font-family: inherit;
@@ -24,7 +25,6 @@ a:hover{
     color: #000000 !important;
     text-decoration: none !important;
 }
-
 
 /* Nav */
 #nav{
@@ -82,21 +82,18 @@ a:hover{
     margin-right: 15px;
     opacity: 0.7;
 }
-.zuri-images{
-    
-}
-@keyframes zuriImages{
-    0%{right: -1109px; display: none;}
-    100%{right: 0; display: block;}
-}
+
 #zuri-images1{
     background: url(/Images/girlsmile.png) center center/cover no-repeat;
+    height: 100vh;
 }
 #zuri-images2{
     background: url(/Images/girlfine.png)  center center/cover no-repeat;
+    height: 100vh;
 }
 #zuri-images3{
     background: url(/Images/girlOnGlasses.png) center center/cover no-repeat;
+    height: 100vh;
 }
 @media screen and (max-width:1024px){
     #nav h1{
@@ -115,6 +112,10 @@ a:hover{
     #nav h1{
         margin: 95px 15px 130px;
         width: 120px;
+    }
+    .zuri-images{
+        margin-bottom: 20px;
+        padding: 0px 20px 0px;
     }
 }
 
