@@ -15,7 +15,7 @@ body{
 .page-title{
 	text-align: center;
 	font-weight: bold;
-	font-size: 3.125rem;
+	font-size: 3.126rem;
 }
 
 
@@ -205,7 +205,7 @@ body{
 		padding: 0 1.875rem;
 	}
 
-
+  2
 	.hide{
 		display: block;
 	}
