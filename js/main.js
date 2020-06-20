@@ -1,11 +1,10 @@
-var navbtn = document.getElementsByClassName('m_nav'); //Class of toggle button
-var c_name = document.getElementsByClassName('company_name'); //Zuri studio text for nav
-var nav = document.getElementsByClassName('main_nav_mb'); //Div of The mb container 
-var tp = document.getElementsByClassName('tp_company_name'); //Zuri studio text for nav
+var navbtn = document.getElementsByClassName('m_nav');
+var c_name = document.getElementsByClassName('company_name');
+var nav = document.getElementsByClassName('main_nav_mb');
+var tp = document.getElementsByClassName('tp_company_name');
 
 
-console.log(navbtn);
-console.log(nav.length);
+console.log(navbtn)
 
 for(let i=0; i < nav.length; i++){
 
