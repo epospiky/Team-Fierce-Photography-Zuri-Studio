@@ -1,0 +1,295 @@
+body{
+    background-color: #ffffff!important;
+}
+
+.pull-left{float:left}
+.pull-right{float:right}
+.clearfix:after,.clearfix:before{content:'';
+    display:table}
+.clearfix:after{clear:both;
+    display:block}
+
+.calendar{
+    width:60%;
+    font-size:100%;
+    margin:0 auto;
+    perspective:1000px;
+    cursor:default;
+    position:relative;
+    padding-top:2rem;
+}
+.calendar .header{
+    height:60px;
+    position:relative;
+    color:#fff
+}
+.calendar h3{
+    columns: #000000;
+    font-weight: bold;
+    font-family: quicksand;
+    text-align: center;
+}
+.calendar hr{
+    margin: auto;
+    width: 200px;
+    border: 1px solid #FF7A00;
+    margin-bottom: 1.5rem;
+}
+
+.calendar .header .text{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#FF7A00;
+    padding:15px;
+    transform:rotateX(90deg);
+    transform-origin:bottom;
+    backface-visibility:hidden;
+    transition:.4s ease-in-out 0s;
+    box-shadow:0 6px 20px 0 rgba(0,0,0,.19), 0 8px 17px 0 rgba(0,0,0,.2);
+    opacity:0}
+.calendar .header .text>span{
+    text-align:center;
+    padding:auto 26px;
+    display:block; 
+    font-family: 'Roboto Condensed', sans-serif;    }
+.calendar .header.active .text{
+    transform:rotateX(0deg);
+    border-radius: 1rem 1rem 0 0;
+    opacity:1
+}
+.months{width:100%;
+    position:relative
+}
+.months .hr{
+    height:1px;
+    margin:15px 0;
+    background:#ccc
+}
+.month{padding:15px;
+    width:inherit;
+    height:inherit;
+    background:#fff;
+    position:absolute;
+    backface-visibility:hidden;
+    transition:all .4s ease-in-out 0s;
+    box-shadow:0 6px 20px 0 rgba(0,0,0,.19),0 8px 17px 0 rgba(0,0,0,.2)
+}
+.months[data-flow="left"] .month{transform:rotateY(-180deg)}
+.months[data-flow="right"] .month{transform:rotateY(180deg)}
+.table{width:100%;
+    font-size:10px;
+    font-weight:400;
+    display:table
+}
+.table{
+    width: 100%!important;
+}
+.table .row{
+    display:table-row
+}
+.table .row.head{
+    color:#000000;
+    text-transform:uppercase
+}
+.table .row .cell{
+    padding:5px;
+    color: #000000;
+    text-align:center;
+    display:table-cell;
+    border-radius:7px;
+    margin-right:6px!important;
+  
+}
+div.cell{
+    margin: 5px!important;
+    height: 50px;
+    color: #000000;
+}
+
+.table .row .cell.disable{
+    color: rgba(0, 0, 0, 0.5);
+    margin: 4px;}
+    
+.table .row .cell span{
+    display:block;
+    background: #E0DFDF;
+    border-radius: 5px;
+    font-size: 12px;
+    height: 50px;
+    text-align: center!important;
+    line-height:4;
+    transition:color,background .4s ease-in-out 0s}
+.table .row .cell.active span span{
+    color: #000000; 
+    border-radius: 100%; 
+    padding: 0!important;
+    height: 50px;
+    border: 1px solid #FF7A00;
+}
+.months .month[data-active="true"]{transform:rotateY(0)}
+.header [data-action]{color:inherit;
+    position:absolute;
+    top:50%;
+    margin-top:-20px;
+    width:40px;
+    height:40px;
+    z-index:1;
+    opacity:0;
+    transition:all .4s ease-in-out 0s}
+.header [data-action]>i{width:30px;
+    height:30px;
+    display:block;
+    position:relative;
+    border:1px solid #ffffff;
+    border-radius: 100%;
+    left:50%;
+    top:50%;
+    text-align: center;
+    margin-top:-10px;
+    margin-left:-10px}
+    .header [data-action]:hover{
+    text-decoration: none;
+}
+.header [data-action*="prev"]{left:15px; }
+.header [data-action*="next"]{right:15px; }
+.header [data-action*="next"]>i{padding-left: 8px; }
+.header [data-action*="next"]>i{padding-right: 8px; }
+.header.active [data-action]{opacity:1}
+
+
+.aptmt{
+    display: none;
+    z-index: 10;
+}
+.aptmt .head{
+    background-color: #FF7A00;
+    color:#ffffff;
+    padding: 10px;
+    text-align: center;
+    font-weight: lighter!important;
+    margin-bottom: 10px;
+}
+.body-cont{
+    display: flex;
+    justify-content: space-between;
+    color: #000000;
+    font-size: 12px!important;
+    padding-top: 20px;
+}
+.body-cont span{
+    padding-right: 10px;
+}
+.body-cont a{
+    text-decoration: none;
+    border: 1px solid #FF7A00;
+    border-radius: 20px;
+    color:#FF7A00;
+    padding: 8px;
+}
+.aptmt hr{
+    border: 1px solid #E0DFDF;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.modal-content p, .modal-content label{
+    color: #737171;
+}
+
+.modal-content input[type=text], .modal-content input[type=file]{
+    padding: 10px 0;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    width: 100%;
+    border:none!important;
+    outline: 1px solid #FF7A00!important;
+}
+.aptmt-selected input[type=text]{
+    padding-left: 4.5rem!important;
+}
+.calendar-icon{
+    background: #FF7A00;
+    position: absolute;
+    border-radius: 50%;
+    padding: 5px;
+    left: 40px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+}
+.modal-header{
+    background-color: #FF7A00;
+    color: #ffffff;
+}
+.close{
+    color: #ffffff;
+}
+.modal-title{
+    text-align: center!important;
+}
+.modal-body{
+    background-color: #EDECEC;
+}
+.modal-body h6, .modal-body h5{
+    color: #000000!important;
+    font-weight: bolder!important;
+}
+.modal-body h6{
+    font-size: 14px;
+}
+.custom-radio{
+    opacity: 0;
+    position: absolute;
+}
+.custom-radio, .custom-label{
+    display: inline-block;
+    vertical-align: middle;
+    margin:5px;
+    cursor: pointer;
+}
+.custom-label{
+    position: relative;
+}
+.custom-radio + .custom-label:before{
+    content: '';
+    background: #ffffff;
+    border: 1px solid #FF7A00;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
+}
+.custom-radio + .custom-label:before{
+    border-radius: 50%;
+}
+.custom-radio:checked + .custom-label:before{
+    background: #FF7A00;
+    box-shadow: inset 0px 0px 0px 4px #fff;
+}
+.modal-footer{
+    display: flex;
+    justify-content: center;
+    background-color: #EDECEC;
+    text-align: center;
+}
+.modal-footer .btn-primary{
+    background-color: #FF7A00;
+    border-radius: 25px;
+    border: 1px solid #FF7A00;
+    font-weight: unset!important;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.modal-footer .btn-secondary{
+    background-color: #000000;
+    border-radius: 25px;
+    border:1px solid #000000;
+    padding-right: 30px;
+    padding-left: 30px;
+}

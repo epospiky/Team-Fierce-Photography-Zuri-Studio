@@ -25,8 +25,10 @@
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/font.css" />
     <link rel="stylesheet" type="text/css" href="./css/gallery-qobi.css" />
-    <!-- ADD YOUR CSS LINK -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
 
+    <!-- ADD YOUR CSS LINK -->
+    <link rel="stylesheet" type="text/css" href="./css/book.css">
 </head>
 
 <body>
@@ -101,8 +103,7 @@
                                 </li>
                             </ul>
                         </div>
-
-
+                       
                         <!-- FOOTER (INSIDE SIDE NAV BAR) STARTS HERE -->
                         <div class="row footer_nav m-0 p-0">
 
@@ -133,7 +134,86 @@
             <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 mt-4">
 
 
-
+             <!--MAIN CONTENT GOES HERE-->
+             <div class="calendar">
+                 <h3>BOOK</h3>
+                 <hr>
+                <div class="header">
+                    <a href="javascript:void(0)" data-action="prev-month" title="Previous Month"><i>&#8592;</i></a>
+                    <div class="text" data-render="month-year"></div>
+                    <a href="javascript:void(0)" data-action="next-month" title="Next Month"><i>&#8594;</i></a>
+                </div>
+                <div class="months" data-flow="left">
+                    <div class="month month-a" >
+                        <div class="render render-a"></div>
+                        <div class="aptmt">
+                            <div class="head">
+                                AVAILABLE APPOINTMENTS ON JUNE 20, 2020
+                            </div>
+                            <div class="body">
+                                <div class="body-cont">
+                                    <div><span><img src="./Images/time.png" alt="time"></span>9:30am - 10:30am</div>
+                                    <div>4 SPACES AVAILABLE</div>
+                                    <div><a href="#" data-toggle="modal" data-target="#ModalEx">BOOK APPOINTMENT</a></div>
+                                </div>
+                                <hr>
+                                <div class="body-cont">
+                                    <div><span><img src="./Images/time.png" alt="time"></span>11:30am - 2:30Pm</div>
+                                    <div>2 SPACES AVAILABLE</div>
+                                    <div><a href="#" data-toggle="modal" data-target="#ModalEx">BOOK APPOINTMENT</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="month month-b">
+                        <div class="render render-b"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade" id="ModalEx" tabindex="-1" role="dialog" aria-labelledby="modalExLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalExLabel">Request an Appointment</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Please confirm that you would like to request the following appointment</p>
+                            <div class="aptmt-selected"><input type="text"value="June 19, 2020 at 9:30 am - 10:30 am" readonly><span class="calendar-icon"><img src="./Images/calendar.png" alt=""></span></div>
+                            <h5>Your Information</h5>
+                            <P>Please enter your first name, last name and email address</P>
+                            <div><input type="text" placeholder="First name..."></div>
+                            <div><input type="text" placeholder="Last name..."></div>
+                            <div><input type="text" placeholder="Email Address..."></div>
+                            <h6>CHOOSE YOUR PHOTOGRAPHER</h6>
+                            <div><input type="file" placeholder="CHOOSE a file"></div>
+                            <h6>SERVICES</h6>
+                            <div class="radio-sec">
+                                <div class="radio row">
+                                    <div class="col-xs-6 col-md-6"><input class="custom-radio" type="radio" id="fashion" name="services" value="Fashion" checked><label class="custom-label" for="fashion">Fashion</label></div>
+                                    <div class="col-xs-6 col-md-6"><input class="custom-radio" type="radio" id="studio" name="services" value="Studio"><label class="custom-label" for="studio">Studio</label></div>
+                                </div>
+                                <div class="radio row">
+                                    <div class="col-xs-6 col-md-6"><input class="custom-radio" type="radio" id="nature" name="services" value="Nature"><label class="custom-label" for="nature">Nature</label></div>
+                                    <div class="col-xs-6 col-md-6"><input class="custom-radio" type="radio" id="creative" name="services" value="Creative"><label class="custom-label" for="creative">Creative</label></div>
+                                </div>
+                                <div class="radio row">
+                                   <div class="col-xs-6 col-md-6"> <input class="custom-radio" type="radio" id="lifestyle" name="services" value="Lifestyle"><label class="custom-label" for="lifestyle">Lifestyle</label></div>
+                                    <div class="col-xs-6 col-md-6"><input class="custom-radio" type="radio" id="others" name="services" value="Others"><label class="custom-label" for="others">Others</label></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary col-xs-8">REQUEST APPOINTMENT</button>
+                            <button  type="button" class="btn btn-secondary col-xs-4" data-dismiss="modal">CANCEL</button>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <!-- MAIN CONTENT ENDS HERE-->
 
 
                 <!-- ADD YOU CODE HERE -->
@@ -161,10 +241,21 @@
             <!-- FOOTER ENDS HERE -->
     </div>
     
-<!-- All javascript at the bottom of the page for fast page load -->
+<!-- All javascript at the bottom of the page for fast page load-->
 <script src="./js/jquery-3.5.1.min.js"></script>
-<script src="./js/bootstrap.min.js"></script>
+<script src="./js/bootstrap.min.js"></script> 
 <script src="./js/main.js"></script>
+<script>
+        function toggleAptmt(){
+
+        var x = document.querySelector(".aptmt");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    };
+</script>
 </body>
 
 </html>
