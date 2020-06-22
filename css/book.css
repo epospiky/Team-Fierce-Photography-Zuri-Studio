@@ -293,3 +293,11 @@ div.cell{
     padding-right: 30px;
     padding-left: 30px;
 }
+
+
+@media only screen and (max-width: 600px){
+.calendar{
+    width:95%;
+    padding-top:.5rem;
+}
+}
