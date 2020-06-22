@@ -300,5 +300,9 @@ div.cell{
     width:100%;
     padding-top:.5rem;
     margin:unset;
+    margin-bottom: 1rem!important;
+}
+.body-cont{
+    font-size:10px!important;
 }
 }
