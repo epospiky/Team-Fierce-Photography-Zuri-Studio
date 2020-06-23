@@ -347,6 +347,7 @@ div.cell{
     .calendar{
         width:100%;
         padding-top: 0px;
+        margin-bottom: 1rem!important;
     }
     .body-cont{
         font-size:10px!important;
